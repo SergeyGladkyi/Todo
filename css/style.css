@@ -1,0 +1,9 @@
+@import url('/css/header.css');
+@import url('/css/input.css');
+@import url('/css/board.css');
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
