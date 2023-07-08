@@ -1,6 +1,6 @@
-@import url('/css/header.css');
-@import url('/css/input.css');
-@import url('/css/board.css');
+@import url('header.css');
+@import url('input.css');
+@import url('board.css');
 
 
 .container {
