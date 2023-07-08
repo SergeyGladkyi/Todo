@@ -1,9 +1,18 @@
 @import url('header.css');
 @import url('input.css');
 @import url('board.css');
+@import url('animate.css');
 
 
 .container {
     max-width: 1100px;
     margin: auto;
+}
+
+.animate__bounce {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
 }
