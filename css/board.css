@@ -1,9 +1,9 @@
 
 .board-wrap {
     max-width: 500px;
-    height: 490px;
+    height: 430px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     padding-top: 10px;
     border-radius: 20px 20px 20px;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -14,24 +14,21 @@
     /* display: flex;
     justify-content: space-between; */
     max-width: 450px;
-    min-height: 100px;
+    min-height: 70px;
     margin: auto;
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    padding-right: 50px;
+    padding-right: 10px;
     background-color: antiquewhite;
     border-radius: 20px 20px 20px 20px;
 }
 
-.creatTextarea {
-    width: 400px;
-    min-height: 30px;
-    resize: none;
+.creatP {
+    width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: blanchedalmond; 
-    outline: none;
+    background-color: none; 
     overflow-y: hidden;
 }
 
@@ -47,9 +44,90 @@
 .board_wrap__added-btn-edit {
     width: 30px;
     height: 20px;
+    margin-left: 15px;
     margin-top: 10px;
     background-color: azure;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     border-radius: 5px 5px 5px 5px;
 }
 
+.creatPopUp {
+    display: none;
+    max-width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: calc(50% - 100px);
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: brown;
+    -webkit-box-shadow: 4px 27px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 27px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 27px 8px 0px rgba(34, 60, 80, 0.2);
+    z-index: 2;
+
+    transition: all 0.3s;
+    transform: rotateX(20deg);
+}
+
+.creatPopUp_wrap .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.btn_creatPopUp {
+    position: absolute;
+    right: 20px;
+    background: none;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.creatPopUp_wrap--active {
+    display: block;
+}
+
+.creatPopUp--active {
+    display: block;
+}
+
+.creatPopUp_textarea {
+    width: 100%;
+    height: 90px;
+    resize: none;
+    outline: none;
+    margin-top: 25px;
+
+}
+
+.creatPopUp_p { 
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  margin-left: 11px;
+  margin-top: 4px
+}
+
+.creatPopUp__btn-save-wrap {
+    text-align: center;
+}
+
+.creatPopUp__btn-save {
+    background-color: brown;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
